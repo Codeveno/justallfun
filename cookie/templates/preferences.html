@@ -13,8 +13,8 @@
         <br>
         <label for="theme">Theme:</label>
         <select id="theme" name="theme">
-            <option value="light" {{ 'selected' if theme == 'light' else '' }}>Light</option>
-            <option value="dark" {{ 'selected' if theme == 'dark' else '' }}>Dark</option>
+            <option value="light" {% if theme == 'light' %}selected{% endif %}>Light</option>
+            <option value="dark" {% if theme == 'dark' %}selected{% endif %}>Dark</option>
         </select>
         <br>
         <button type="submit">Save</button>
